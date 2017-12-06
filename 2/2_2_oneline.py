@@ -1,1 +1,1 @@
-print(int(sum(map(lambda x: x[0][0]/x[0][1], map(lambda x: list(filter(lambda x: not x[0]%x[1], __import__('itertools').combinations(sorted(x, reverse=True), 2))), map(lambda x: list(map(int, x.split())), __import__('sys').stdin.read().rstrip().split('\n')))))))
+print(int(sum(map(lambda x: x[0][0]/x[0][1], map(lambda x: list(filter(lambda x: not x[0]%x[1], __import__('itertools').combinations(sorted(x, reverse=True), 2))), map(lambda x: list(map(int, x.split())), __import__('sys').stdin.readlines()))))))

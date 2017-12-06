@@ -1,7 +1,7 @@
 import sys
 
 
-lines = list(map(int, sys.stdin.read().strip().split('\n')))
+lines = list(map(int, sys.stdin.readlines()))
 i = 0
 tot = 0
 
