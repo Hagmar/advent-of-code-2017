@@ -1,0 +1,1 @@
+print(__import__('functools').reduce(lambda s,_:((s[0]*16807)%2147483647,(s[1]*48271)%2147483647,s[2]+(0 if (s[0]^s[1])%65536 else 1)),range(40000000),(int(input().split()[-1]),int(input().split()[-1]),0))[2])

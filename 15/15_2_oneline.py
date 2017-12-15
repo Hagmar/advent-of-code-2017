@@ -1,0 +1,1 @@
+print(__import__('functools').reduce(lambda s,_:(next((s[0]*16807**i)%2147483647 for i in range(1,1000) if not ((s[0]*16807**i)%2147483647)%4),next((s[1]*48271**i)%2147483647 for i in range(1,1000) if not ((s[1]*48271**i)%2147483647)%8),s[2]+(0 if (s[0]^s[1])%65536 else 1)),range(5000000),(int(input().split()[-1]),int(input().split()[-1]),0))[2])
