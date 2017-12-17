@@ -1,7 +1,7 @@
 from collections import Counter
 import sys
 
-ls = sys.stdin.read().rstrip().split('\n')
+ls = sys.stdin.readlines()
 d = {}
 ns = {}
 for l in ls:

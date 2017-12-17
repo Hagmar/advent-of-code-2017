@@ -1,6 +1,6 @@
 import sys
 
-ls = sys.stdin.read().rstrip().split('\n')
+ls = sys.stdin.readlines()
 d = {}
 
 for l in ls:
